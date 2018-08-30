@@ -1,0 +1,7 @@
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\WebSites\ShopFashion\ShopFashion.Common\obj\Debug\ShopFashion.Common.csprojAssemblyReference.cache
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\WebSites\ShopFashion\ShopFashion.Common\obj\Debug\ShopFashion.Common.csproj.CoreCompileInputs.cache
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\WebSites\ShopFashion\ShopFashion.Common\bin\Debug\ShopFashion.Common.dll.config
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\WebSites\ShopFashion\ShopFashion.Common\bin\Debug\ShopFashion.Common.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\WebSites\ShopFashion\ShopFashion.Common\bin\Debug\ShopFashion.Common.pdb
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\WebSites\ShopFashion\ShopFashion.Common\obj\Debug\ShopFashion.Common.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\WebSites\ShopFashion\ShopFashion.Common\obj\Debug\ShopFashion.Common.pdb
