@@ -11,8 +11,7 @@ namespace ShopFashion.Model
 {
     public class ShopFashionContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid, ApplicationUserLogin, ApplicationUserRole, ApplicationUserClaim>
     {
-        public ShopFashionContext()
-            : base("DefaultConnection")
+        public ShopFashionContext() : base("ShopFashion")
         {
             this.Configuration.LazyLoadingEnabled = true;
             //this.Configuration.ProxyCreationEnabled = false;

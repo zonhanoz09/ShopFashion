@@ -53,11 +53,11 @@
       <Name>ShopFashion.Repository</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Classes\DemoService.cs" />
     <Compile Include="Configuration\AutomapperConfiguration.cs" />
+    <Compile Include="EntityService.cs" />
     <Compile Include="Models\DemoTableService.cs" />
   </ItemGroup>
   <ItemGroup>

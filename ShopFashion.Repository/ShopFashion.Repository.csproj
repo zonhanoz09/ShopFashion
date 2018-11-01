@@ -40,6 +40,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\DemoRepository.cs" />
     <Compile Include="Shared\Repository.cs" />
     <Compile Include="Shared\UnitOfWork.cs" />
   </ItemGroup>
@@ -59,9 +60,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ShopFashion.Common\ShopFashion.Common.csproj">
       <Project>{d3b2e2a8-e5d0-4a3c-9311-bee9830aa748}</Project>
