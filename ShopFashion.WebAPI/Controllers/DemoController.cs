@@ -21,11 +21,17 @@ namespace ShopFashion.WebAPI.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            var x = _demoService.Demo1();
             var check = _demoService.Insert("NhanHV111");
             return new string[] { "value1", "value2" };
         }
+        [Route("api/name")]
+        [HttpGet]
+        public string GetName()
 
+        {
+            var name = _demoService.GetDemoByName("NhanHV5");
+            return name;
+        }
         // PUT api/demo/5
         public void Post(string name, [FromBody]string value)
         {

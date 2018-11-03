@@ -12,6 +12,7 @@ namespace ShopFashion.Model.Classes
     public class DemoTable : BaseEntity
     {
         [MaxLength(255)]
+        [Column("Name")]
         public string Name { get; set; }
     }
 }

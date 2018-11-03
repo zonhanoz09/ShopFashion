@@ -11,11 +11,11 @@ namespace ShopFashion.Service.Classes
 {
     public interface IDemoService
     {
-        int Demo1();
-
         bool Insert(string name);
+
+        string GetDemoByName(string name);
     }
-    public class DemoService : IDemoService
+    public class DemoService : IDemoService, IEntityService
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -23,9 +23,12 @@ namespace ShopFashion.Service.Classes
         {
             _unitOfWork = unitOfWork;
         }
-        public int Demo1()
+
+        public string GetDemoByName(string name)
         {
-            return 12;
+            var result = _unitOfWork.DemoRepository.Get(
+                filter : x =>x.Name ==name);
+            return result.ToString();
         }
 
         public bool Insert(string name)

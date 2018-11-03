@@ -1,5 +1,6 @@
 ﻿using ShopFashion.Model;
 using ShopFashion.Model.Classes;
+using ShopFashion.Repository.Classes;
 using System;
 using System.Data.Entity;
 
@@ -15,20 +16,20 @@ namespace ShopFashion.Repository.Shared
 
         void Dispose();
 
-        Repository<DemoTable> DemoRepository { get; }
+        DemoRepository DemoRepository { get; }
+
     }
     public class UnitOfWork : IUnitOfWork
     {
         private ShopFashionContext context = new ShopFashionContext();
-        private Repository<DemoTable> demoRepository;
+        private DemoRepository demoRepository;
 
-        public Repository<DemoTable> DemoRepository
-        {
+        public DemoRepository DemoRepository {
             get
             {
                 if (this.demoRepository == null)
                 {
-                    this.demoRepository = new Repository<DemoTable>(context);
+                    this.demoRepository = new DemoRepository(context);
                 }
                 return demoRepository;
             }

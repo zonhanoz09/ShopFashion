@@ -1,4 +1,5 @@
-﻿using ShopFashion.Model.Classes;
+﻿using ShopFashion.Model;
+using ShopFashion.Model.Classes;
 using ShopFashion.Repository.Shared;
 using System;
 using System.Collections.Generic;
@@ -9,13 +10,15 @@ using System.Threading.Tasks;
 
 namespace ShopFashion.Repository.Classes
 {
-    public interface IDemoRepository 
+    public class DemoRepository : Repository<DemoTable>
     {
-    }
-    public class DemoRepository : IDemoRepository
-    {
-        public DemoRepository()
+        internal ShopFashionContext context;
+        internal DbSet<DemoTable> dbSet;
+
+        public DemoRepository(ShopFashionContext context) : base(context)
         {
+            this.context = context;
+            this.dbSet = context.Set<DemoTable>();
         }
     }
 }

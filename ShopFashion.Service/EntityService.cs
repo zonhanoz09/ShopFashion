@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopFashion.Service
 {
-    public interface IEntityService<T> where T : BaseEntity
+    public interface IEntityService
     {
         //IEnumerable<T> GetAll();
         //ListFeedback<T> GetAll(PageInfo pageInfo, string sortColumn, EnumCommon.SortDirection direction);
@@ -22,9 +22,9 @@ namespace ShopFashion.Service
 
         //void Update(IList<T> entityList);
     }
-    public class EntityService<T> : IEntityService<T> where T : BaseEntity
+    public class EntityService : IEntityService
     {
-        readonly IUnitOfWork _unitOfWork;
+        public readonly IUnitOfWork _unitOfWork;
 
         protected EntityService(IUnitOfWork unitOfWork)
         {
