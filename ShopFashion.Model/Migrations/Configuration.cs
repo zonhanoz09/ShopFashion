@@ -33,6 +33,19 @@ namespace ShopFashion.Model.Migrations
             //{
             //    BuildNavigationList(context);
             //}
+
+            //foreach (var user in BuildUsers())
+            //{
+            //    context.Users.AddOrUpdate(u => u.Id, user);
+            //}
+
+            //foreach (var role in BuidRoles())
+            //{
+            //    context.Roles.AddOrUpdate(u => u.Id, role);
+            //}
+
+            //BuidUserRoles(context);
+
             context.SaveChanges();
         }
         private ApplicationUser[] BuildUsers()
@@ -66,6 +79,11 @@ namespace ShopFashion.Model.Migrations
             {
                 new ApplicationRole
                 {
+                     Id = new Guid("0EE4DC0F-A405-42CA-A42B-55B3C2DE204A"),
+                     Name ="Super Admin"
+                },
+                new ApplicationRole
+                {
                      Id = new Guid("1D631A07-9E64-464E-B850-48B7B1286179"),
                      Name ="Admin"
                 },
@@ -74,20 +92,16 @@ namespace ShopFashion.Model.Migrations
                      Id = new Guid("2A4E9B1E-9651-4663-B288-53E258FE0B87"),
                      Name ="Internal User"
                 },
-                new ApplicationRole
-                {
-                     Id = new Guid("0EE4DC0F-A405-42CA-A42B-55B3C2DE204A"),
-                     Name ="Technology Provider"
-                },
-                new ApplicationRole
-                {
-                     Id = new Guid("24EB8BBF-E7A2-4F0F-B639-DCC1AB96EECB"),
-                     Name ="Evaluator"
-                },
+                
                 new ApplicationRole
                 {
                      Id = new Guid("57135453-FCC7-4620-A989-BC1277D80F45"),
                      Name ="Management User"
+                } ,
+                new ApplicationRole
+                {
+                     Id = new Guid("24EB8BBF-E7A2-4F0F-B639-DCC1AB96EECB"),
+                     Name ="User"
                 }
             };
             return roles;

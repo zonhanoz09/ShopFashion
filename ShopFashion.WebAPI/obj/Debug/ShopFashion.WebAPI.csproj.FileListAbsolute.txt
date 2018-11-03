@@ -125,3 +125,13 @@ C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\ShopFashion.Common.dll
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\ShopFashion.Common.pdb
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\ShopFashion.Common.dll.config
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\Microsoft.Owin.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\Owin.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\System.Web.Cors.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\Microsoft.Owin.xml
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\Swashbuckle.Core.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\WebActivatorEx.dll

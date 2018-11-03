@@ -43,8 +43,6 @@ namespace ShopFashion.Repository.Classes
         Task<List<Guid>> GetRolesOfUser(Guid userId);
         void ResetLockTime(Guid userId);
         List<ApplicationUser> FindAdmin();
-        int CountNumberOfTechnologyProvider();
-        Guid FindRoleIdOfTechProvider();
     }
 
     public class AuthRepository : IAuthRepository, IDisposable
@@ -82,7 +80,7 @@ namespace ShopFashion.Repository.Classes
             if (result.Succeeded)
             {
                 // Mappling user and role
-                await _userManager.AddToRoleAsync(user.Id, Role.TechnologyProvider);
+                await _userManager.AddToRoleAsync(user.Id, Role.User);
             }
             return result;
         }
@@ -260,33 +258,6 @@ namespace ShopFashion.Repository.Classes
             {
                 return null;
             }
-        }
-
-        
-        public int CountNumberOfTechnologyProvider()
-        {
-            var idRoleTechnologyProvider = _roleManager.Roles.Where(x => x.Name == Role.TechnologyProvider).Select(x => x.Id).ToList();
-
-            if (idRoleTechnologyProvider != null && idRoleTechnologyProvider.Any())
-            {
-                var numInternalUsers = _userManager.Users.Where(x => !x.IsDeleted
-                                                               && x.IsActive
-                                                               && x.Roles.Any(y => idRoleTechnologyProvider.Contains(y.RoleId)))
-                                                         .Count();
-
-                return numInternalUsers;
-            }
-            else
-            {
-                return 0;
-            }
-        }
-
-        public Guid FindRoleIdOfTechProvider()
-        {
-            var idRoleTechProvider = _roleManager.Roles.Where(x => x.Name == Role.TechnologyProvider).Select(x => x.Id).FirstOrDefault();
-
-            return idRoleTechProvider;
         }
 
         #region Role Manager
