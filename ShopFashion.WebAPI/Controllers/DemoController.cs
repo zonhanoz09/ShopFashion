@@ -22,7 +22,7 @@ namespace ShopFashion.WebAPI.Controllers
         public IEnumerable<string> Get()
         {
             var x = _demoService.Demo1();
-            var check = _demoService.Insert("NhanHV5");
+            var check = _demoService.Insert("NhanHV111");
             return new string[] { "value1", "value2" };
         }
 

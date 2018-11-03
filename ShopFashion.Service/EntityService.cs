@@ -25,12 +25,10 @@ namespace ShopFashion.Service
     public class EntityService<T> : IEntityService<T> where T : BaseEntity
     {
         readonly IUnitOfWork _unitOfWork;
-        readonly IRepository<T> _repository;
 
-        protected EntityService(IUnitOfWork unitOfWork, IRepository<T> repository)
+        protected EntityService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _repository = repository;
         }
 
         //public virtual IEnumerable<T> GetAll()

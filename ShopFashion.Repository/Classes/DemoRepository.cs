@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace ShopFashion.Repository.Classes
 {
-    public interface IDemoRepository : IRepository<DemoTable>
+    public interface IDemoRepository 
     {
     }
-    public class DemoRepository : Repository<DemoTable>, IDemoRepository
+    public class DemoRepository : IDemoRepository
     {
-        public DemoRepository(DbContext context) : base(context)
+        public DemoRepository()
         {
         }
     }

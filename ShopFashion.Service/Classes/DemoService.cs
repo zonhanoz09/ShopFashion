@@ -15,15 +15,13 @@ namespace ShopFashion.Service.Classes
 
         bool Insert(string name);
     }
-    public class DemoService : EntityService<DemoTable>, IDemoService
+    public class DemoService : IDemoService
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IDemoRepository _demoRepository;
 
-        public DemoService(IUnitOfWork unitOfWork,IDemoRepository demoRepository)
-            : base(unitOfWork, demoRepository)
+        public DemoService(IUnitOfWork unitOfWork)
         {
-            _demoRepository = demoRepository;
+            _unitOfWork = unitOfWork;
         }
         public int Demo1()
         {
@@ -34,8 +32,8 @@ namespace ShopFashion.Service.Classes
         {
             Model.Classes.DemoTable demoTable = new Model.Classes.DemoTable();
             demoTable.Name = name;
-            _demoRepository.Add(demoTable);
-            _demoRepository.Commit();
+            _unitOfWork.DemoRepository.Insert(demoTable);
+            _unitOfWork.Save();
             return true;
         }
     }

@@ -29,3 +29,4 @@ C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.Model\
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.Model\obj\Debug\ShopFashion.Model.csproj.CopyComplete
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.Model\obj\Debug\ShopFashion.Model.dll
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.Model\obj\Debug\ShopFashion.Model.pdb
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.Model\obj\Debug\ShopFashion.Model.csprojAssemblyReference.cache

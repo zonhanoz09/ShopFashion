@@ -60,7 +60,7 @@ namespace ShopFashion.WebAPI
                 .AsImplementedInterfaces()
                 .InstancePerRequest();
 
-            builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerRequest();
+            //builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerRequest();
             builder.RegisterType(typeof(UnitOfWork)).As(typeof(IUnitOfWork)).InstancePerRequest();
             builder.RegisterType(typeof(ShopFashionContext)).As(typeof(DbContext)).InstancePerRequest();
         }

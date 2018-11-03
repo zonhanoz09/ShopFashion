@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ShopFashion.Model;
+using ShopFashion.Model.Classes;
+using System;
 using System.Data.Entity;
 
 namespace ShopFashion.Repository.Shared
@@ -9,57 +11,52 @@ namespace ShopFashion.Repository.Shared
         /// Saves all pending changes
         /// </summary>
         /// <returns>The number of objects in an Added, Modified, or Deleted state</returns>
-        int Commit();
+        void Save();
+
+        void Dispose();
+
+        Repository<DemoTable> DemoRepository { get; }
     }
-    public class UnitOfWork : IUnitOfWork, IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
-        /// <summary>
-        /// The DbContext
-        /// </summary>
-        private DbContext DbContext { get; set; }
+        private ShopFashionContext context = new ShopFashionContext();
+        private Repository<DemoTable> demoRepository;
 
-        /// <summary>
-        /// Initializes a new instance of the UnitOfWork class.
-        /// </summary>
-        /// <param name="context">The object context</param>
-        public UnitOfWork(DbContext context)
+        public Repository<DemoTable> DemoRepository
         {
-            DbContext = context;
+            get
+            {
+                if (this.demoRepository == null)
+                {
+                    this.demoRepository = new Repository<DemoTable>(context);
+                }
+                return demoRepository;
+            }
         }
 
-        /// <summary>
-        /// Saves all pending changes
-        /// </summary>
-        /// <returns>The number of objects in an Added, Modified, or Deleted state</returns>
-        public int Commit()
+        public void Save()
         {
-            // Save changes with the default options
-            return DbContext.SaveChanges();
+            context.SaveChanges();
         }
 
-        #region IUnitOfWork
+        private bool disposed = false;
 
-        #endregion
-
-        #region IDisposable
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    context.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
 
         public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                if (DbContext != null)
-                {
-                    DbContext.Dispose();
-                }
-            }
-        }
-
-        #endregion
     }
 }
