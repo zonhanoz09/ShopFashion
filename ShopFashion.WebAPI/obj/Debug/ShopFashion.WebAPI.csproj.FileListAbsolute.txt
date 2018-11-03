@@ -122,3 +122,6 @@ C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\ShopFashion.Repository.dll.config
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\EntityFramework.SqlServer.dll
 C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\ShopFashion.Common.dll
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\ShopFashion.Common.pdb
+C:\Users\HUYNH-VAN-NHAN\Documents\Visual Studio 2017\Projects\ShopFashion.WebAPI\bin\ShopFashion.Common.dll.config

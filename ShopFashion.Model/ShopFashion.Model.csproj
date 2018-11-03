@@ -43,8 +43,10 @@
     <Compile Include="Base\BaseEntity.cs" />
     <Compile Include="Base\PageInfo.cs" />
     <Compile Include="Classes\DemoTable.cs" />
+    <Compile Include="Classes\UserRoles\UserProfile.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NotMapping\ApplicationUser.cs" />
+    <Compile Include="NotMapping\UserRegisterModel.cs" />
     <Compile Include="ShopFashionContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,5 +64,6 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

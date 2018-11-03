@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DemoRepository.cs" />
+    <Compile Include="Classes\AuthRepository.cs" />
     <Compile Include="Shared\Repository.cs" />
     <Compile Include="Shared\UnitOfWork.cs" />
   </ItemGroup>
